@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/estilosTrivia.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <audio id="sonido5"><source src="/js/vc_narration_five.mp3" type="audio/mpeg"></audio>
+            <audio id="sonido4"><source src="/js/vc_narration_four.mp3" type="audio/mpeg"></audio>
+                <audio id="sonido3"><source src="/js/vc_narration_three.mp3" type="audio/mpeg"></audio>
+                    <audio id="sonido2"><source src="/js/vc_narration_two.mp3" type="audio/mpeg"></audio>
+                        <audio id="sonido1"><source src="/js/vc_narration_one.mp3" type="audio/mpeg"></audio>
+                            <audio id="sonido0"><source src="/js/vc_narration_time.mp3" type="audio/mpeg"></audio>
+                          
+        
+
+
+
+         <!--ARCHIVOS DE SONIDOS - SELECCIONANDO-->
+         <audio id="sonidoSelector">
+            <source src="/js/Select 3.mp3" type="audio/mpeg">                
+        </audio>
+                                
+        <div class="eleccion">
+           
+            
+            <button id = "btn-1" class="btn-tema btnTema1" onclick="eligiendoTema1()" onmouseover ="sonidoSeleccion()"><span>Personajes Historicos</span></button>
+            <button id = "btn-2" class="btn-tema btnTema2" onclick="eligiendoTema2()" onmouseover ="sonidoSeleccion()"><span>Lugares</span></button>
+            <button id = "btn-3" class="btn-tema btnTema3" onclick="eligiendoTema3()" onmouseover ="sonidoSeleccion()"><span>Musica</span></button>
+            <button id = "btn-4" class="btn-tema btnTema4" onclick="eligiendoTema4()" onmouseover ="sonidoSeleccion()"><span>Cosas de Ticos</span></button>
+           
+            <button id = "btn-4" class="btn-tema btnTema6" onclick="eligiendoTema6()" onmouseover ="sonidoSeleccion()"><span>Gamer</span></button>
+            <button id = "btn-4" class="btn-tema btnTema7" onclick="eligiendoTema7()" onmouseover ="sonidoSeleccion()"><span>Anime</span></button>
+        
+        </div>
+
+
+        
+
+
+        <div class="contenedor" id="contenedor">
+
+        <h4 id="pista">JS KEVIN PANIAGUA SANCHEZ - JUEGO DE PREGUNTAS</h4>
+
+        <div class = "enigma" id="enigma">
+
+            
+        <!--AQUI SE INYECTAN LOS P CON LAS LETRAS DESDE JS-->
+
+        </div>
+
+         <!--ARCHIVOS DE SONIDOS - GANADOR -->
+         <audio id="sonidoSuccess">
+            <source src="/js/success.mp3" type="audio/mpeg">                
+        </audio>
+
+
+          <!--ARCHIVOS DE SONIDOS - PERDEDOR -->
+          <audio id="sonidoFailure">
+            <source src="/js/Game Over Super Smash Bros Brawl Music HD.mp3" type="audio/mpeg">                
+        </audio>
+
+        
+
+         <!--ARCHIVOS DE SONIDOS - Musica Menu -->
+        <audio id="menuMusica">
+            <source src="/js/MenuLargo.mp3" type="audio/mpeg">                
+        </audio>
+
+        <h4 class="incorrecto" id="incorrecto">Incorrecto</h4>
+
+
+       
+
+
+
+    <div class="timer" id ="timer">
+        
+        
+        
+
+    </div>
+        
+        <input type="text"  id ="respuesta" class="respuesta" >
+        <img src="/silencio.png" class="mute" onclick="mute()" alt="">
+        <button id ="GO" onclick="GO()" class="boton-go" >GO</button> 
+
+        <section class="lista-intentos">
+            <h4 id="lista">Intentaste con :</h4>
+            <div class="fallos" id ="fallos">
+                
+                <!--AQUI SE INYECTAN LOS FALLOS PARA LA RESPUESTA-->
+            </div>
+        </section>
+
+
+
+        
+    </div>    
+    
+    <!--<img src="/silencio.png" class="mute" onclick="mute()" alt="">-->
+    
+   <script src="/js/juego.js"></script>
+</body>
+</html>
