@@ -1,0 +1,1722 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #001010;
+  font-family: 'Roboto', sans-serif;
+}
+
+.boton-basico {
+  background-color: none;
+  font-weight: 700;
+  border: none;
+  color: #fff;
+  padding: 20px;
+}
+
+.trivia {
+  margin: auto;
+  max-width: 1200px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.trivia .eleccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .trivia .eleccion {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
+}
+
+.trivia .eleccion .btn-tema {
+  cursor: pointer;
+  margin: 10px;
+    border-radius: 50px;
+  -ms-flex-preferred-size: calc(25%);
+      flex-basis: calc(25%);
+  border: none;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  -webkit-transition: ease-in-out 0.1s;
+
+  letter-spacing: 4px;
+  line-height: 20px;
+  background-color: black;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-out;
+}
+
+
+.trivia .eleccion .btn-tema:hover {
+  transform-style: preserve-3d;
+  
+  transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+  .trivia .eleccion .btn-tema {
+    width: 100%;
+  }
+}
+
+.trivia .eleccion .btnTema1 {
+  border: 10px solid #ee0000;
+  color: #ee0000;
+}
+
+.trivia .eleccion .btnTema1:hover {
+  background-color: #ee0000;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #ee0000,0 0 25px #ee0000,0 0 50px #ee0000,0 0 200px #ee0000;
+          box-shadow: 0 0 5px #ee0000,0 0 25px #ee0000,0 0 50px #ee0000,0 0 200px #ee0000;
+}
+
+.trivia .eleccion .btnTema2 {
+  border: 10px solid #24b24e;
+  color: #24b24e;
+}
+
+.trivia .eleccion .btnTema2:hover {
+  background-color: #24b24e;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #24b24e,0 0 25px #24b24e,0 0 50px #24b24e,0 0 200px #24b24e;
+          box-shadow: 0 0 5px #24b24e,0 0 25px #24b24e,0 0 50px #24b24e,0 0 200px #24b24e;
+}
+
+.trivia .eleccion .btnTema3 {
+  border: 10px solid #009ce7;
+  color: #009ce7;
+}
+
+.trivia .eleccion .btnTema3:hover {
+  background-color: #009ce7;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #009ce7,0 0 25px #009ce7,0 0 50px #009ce7,0 0 200px #009ce7;
+          box-shadow: 0 0 5px #009ce7,0 0 25px #009ce7,0 0 50px #009ce7,0 0 200px #009ce7;
+}
+
+.trivia .eleccion .btnTema4 {
+  border: 10px solid #ff7f00;
+  color: #ff7f00;
+}
+
+.trivia .eleccion .btnTema4:hover {
+  background-color: #ff7f00;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #ff7f00,0 0 25px #ff7f00,0 0 50px #ff7f00,0 0 200px #ff7f00;
+          box-shadow: 0 0 5px #ff7f00,0 0 25px #ff7f00,0 0 50px #ff7f00,0 0 200px #ff7f00;
+}
+
+.trivia .eleccion .btnTema5 {
+  border: 10px solid #9900ee;
+  color: #9900ee;
+}
+
+.trivia .eleccion .btnTema5:hover {
+  background-color: #9900ee;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #9900ee,0 0 25px #9900ee,0 0 50px #9900ee,0 0 200px #9900ee;
+          box-shadow: 0 0 5px #9900ee,0 0 25px #9900ee,0 0 50px #9900ee,0 0 200px #9900ee;
+}
+
+.trivia .eleccion .btnTema6 {
+  border: 10px solid #0bf1f7;
+  color: #0bf1f7;
+}
+
+.trivia .eleccion .btnTema6:hover {
+  background-color: #0bf1f7;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #0bf1f7,0 0 25px #0bf1f7,0 0 50px #0bf1f7,0 0 200px #0bf1f7;
+          box-shadow: 0 0 5px #0bf1f7,0 0 25px #0bf1f7,0 0 50px #0bf1f7,0 0 200px #0bf1f7;
+}
+
+.trivia .eleccion .btnTema7 {
+  border: 10px solid #ff01c2;
+  color: #ff01c2;
+}
+
+.trivia .eleccion .btnTema7:hover {
+  background-color: #ff01c2;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #ff01c2,0 0 25px #ff01c2,0 0 50px #ff01c2,0 0 200px #ff01c2;
+          box-shadow: 0 0 5px #ff01c2,0 0 25px #ff01c2,0 0 50px #ff01c2,0 0 200px #ff01c2;
+}
+
+.trivia .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 20px auto;
+  max-width: 1000px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+
+.trivia .contenedor h4 {
+  padding: 15px;
+  font-size: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+.trivia .contenedor .incorrecto {
+  opacity: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: red;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+.trivia .contenedor .enigma {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 25px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto 15px;
+  width: 100%;
+  border: 1px solid orange;
+}
+
+.trivia .contenedor .enigma p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70px;
+  background-color: #000;
+  -ms-flex-preferred-size: calc(5%);
+  flex-basis: calc(5%);
+  border: solid 1px #585757;
+  color: #fff;
+  margin-top: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.trivia .contenedor .respuesta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  height: 50px;
+  width: 40%;
+  display: block;
+  margin: 10px auto;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.trivia .contenedor .boton-go {
+  border: solid 2px #fff;
+  border-radius: 8px;
+  display: block;
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 80px;
+  margin: 20px auto;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.trivia .contenedor .boton-go:hover {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.trivia .contenedor .lista-intentos h4 {
+  display: none;
+}
+
+.trivia .contenedor .fallos {
+  background-color: #4577a7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: fit-content;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+ 
+}
+
+.trivia .contenedor .fallos p {
+
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-transform: uppercase;
+  line-height: 2px;
+  height: 50px;
+  letter-spacing: 2px;
+  -ms-flex-preferred-size: calc(12%);
+  flex-basis: calc(12% );
+}
+
+.trivia .contenedor .timer {
+  font-family: 'Orbitron', sans-serif;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: 90px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: 90px;
+  font-size: 50px;
+  text-align: center;
+  margin: 18px auto;
+  padding: 11px;
+  border-radius: 50px;
+  -webkit-transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.1s;
+  color: #fff;
+}
+
+.trivia .mute {
+  cursor: pointer;
+  position: fixed;
+  border-radius: 0px 75px 75px 0px;
+  left: 0;
+  bottom: 50px;
+  height: 100px;
+  background-color: #30b0d2;
+  padding: 20px;
+}
+
+.trivia .mute:hover {
+
+  background-color: #d23030;
+  
+}
+
+@media (max-width: 500px) {
+  .trivia {
+    margin: 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .trivia {
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
+
+
+
+
+
+
+
+
+
+
+html{
+  box-sizing: border-box;
+  font-size:62.5%; /*rem 1=10px*/
+  } 
+  *, *:before, *:after {
+  box-sizing: inerit;
+  }
+  
+
+
+header{
+  height : 550px;
+}
+  @media (min-width: 768px){
+     header{
+      height :670px;
+     } 
+  }
+  
+
+
+
+
+
+
+  body{
+  
+  font-size: 1.6rem;
+  line-height: 1;
+  font-family: 'Lato', sans-serif; 
+  font-weight: 400;
+  background-color: #141414; 
+  color:white;
+  }
+  
+  /*Globales*/
+
+  .contenedor{
+  max-width: 120rem; 
+  width: 95%;
+  margin: 0 auto;
+  } 
+
+
+  @media (min-width: 1000PX ) {
+      .contenedor{
+          
+          width: 95%;
+          margin: 0 auto;
+          } 
+      
+  }
+
+
+
+
+
+  h1,h2,h3,h4{
+      font-family: 'Monda', sans-serif;
+      font-weight: 400;
+  }
+  
+  h1{
+  font-size: 4.8rem;
+  }
+  
+  h2{
+  font-size: 4rem;
+  }
+  
+  h3{
+  font-size: 3.2rem;
+  }
+  
+  h4{
+  font-size: 2.8rem;
+  }
+
+  .franja-azul{
+      
+     background-color: #072F5F;
+     padding: 2rem;
+  }
+
+  .franja-verde{
+      
+      background-color: #006a4e;
+      padding: 2rem;
+  }
+
+  .franja-amarilla{
+      background-color:#f9a602;
+      padding:2rem;
+  }
+
+ 
+  img{
+   
+  max-width:100%;
+  } 
+
+
+a{
+  text-transform: uppercase;
+}
+  
+  
+  /*utilidades*/ 
+
+ span{
+  color:#9b1c31
+ }
+  
+  .centrar-texto{
+   text-align: center;
+   margin: 0 auto;
+   
+  } 
+
+  .no-margin{
+      margin:0;
+   } 
+
+   
+
+   /*BOTONES*/
+
+  
+
+
+   .btn{
+      cursor: pointer;
+      width: 100%;
+     
+      display:block;
+      background-color:#9b1c31;
+      padding: 1rem;
+      color:white; 
+      border:none;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      flex: 0 0 100%;
+      
+   }
+   @media (min-width: 768px) {
+      .btn:hover{
+          cursor:pointer; /*aparece una mano cuando se le pone el mouse encima*/
+   }
+  }
+   .bg-azul{
+      background-color:#072F5F;
+   }
+
+   .bg-verde{
+      background-color:#006a4e
+   }
+
+
+   /*HEADER*/ 
+
+   .site-header{
+      height:90vh;/*HACE QUE LA IMAGEN CREZCA A UN 90% DE LA PANTALLA DONDE ESTA AL SER PEQUEÑO , MAS ADELANTE HAY UN MQ QUE TOMARA EL 80*/
+      background-image: url(/img/header-2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+          
+   }
+
+
+
+   @media (min-width: 768px ) {
+       .site-header{
+          height: 50vh;
+       }
+      .site-header{
+          
+          background-image: url(/img/header.jpg);/*cambia de imagen si es mas grande la pantalla para el slide de las imagenes*/
+                          
+       }
+   }
+
+   @media (min-width: 1000px) {
+      .site-header{
+          height: 95vh;
+       }
+
+       
+   }
+
+
+   .contenido-header{
+      height: fit-content;/*muy importante , toma el height 100% del padre que lo contiene que en este caso es SITE-HEADER por eso es que toma todo el tamño y separa las cosas a un extremo y otro*/
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+  
+
+
+
+   .texto-header{
+      border: 10px solid #141414;
+      margin: 0 auto;
+      width: 95%;
+     background-color: #141414;
+      justify-content:center;
+      line-height: 1.6;
+      letter-spacing: 1rem;
+      color: white;
+      
+  } 
+
+  @media (min-width: 768px) {
+      .texto-header{
+         
+        
+          line-height: 1.6;
+          
+          color: white;
+          
+      } 
+  }
+
+ 
+
+  
+
+
+   .barra a{
+      letter-spacing: 1rem;
+      display:block;
+      text-align: center;
+      text-decoration: none;
+      color:white;
+      width: fit-content; /*para que el hover se aplique solo en las letras*/
+      margin: 5rem auto; 
+      font-weight: 900;
+      margin-bottom: 1rem;
+
+  } 
+
+  /*TAMAÑO PARA TABLETA Y PC */
+@media (min-width: 768px ) {
+  
+  .barra{
+      margin-top:3rem;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .barra a{
+      letter-spacing: 0.3rem;
+      display:inline-block;/*hacer los links queden de cara*/
+      margin:0rem 3rem 0rem 0rem;/*crear separacion entre links*/
+      text-decoration: none;
+      color:white;
+      width: fit-content; /*para que el hover se aplique solo en las letras*/
+      font-weight: 900;
+  }
+  .barra a:last-of-type{
+      margin-right: 1rem;/*quitar el ultimo margin del ultimo link*/
+  } 
+
+}
+
+
+
+
+  .barra h1{
+      letter-spacing:normal; /*para que el logo no tenga espacio entre letras*/        
+  border: solid #9b1c31;
+  padding: 2px;
+  font-size: 20px;
+
+  }
+ 
+
+
+  /*CARRUCEL*/
+  
+  
+  
+  
+  .carrucel{
+      
+      margin:auto;
+      overflow: hidden;
+      height: 45rem;
+      margin-top: 1rem;
+  }
+
+
+  @media (max-width: 767px) {/*767 para que en celulares etc no se muestre*/
+      .carrucel{
+          display:none;
+      }
+  }
+
+  
+ /*
+
+@media (min-width: 1000PX ) {
+  
+  .carrucel{
+      height: 40%;
+  }
+
+}
+*/
+
+  .carrucel ul{
+      height: 100%;
+     
+   display: flex;
+   padding:0;
+   width: 600%;/*tamaño del carrucel es la cantidad de imagenes * 100*/
+  animation: encendido 120s infinite;
+  }
+  
+
+  .carrucel li{
+      position:relative;/*es el padre del texto para el hover SINOPSIS*/
+      list-style-type: none;
+      width: 100%;/*tamaño del elemento li en cada caso*/
+  }
+
+
+   .sinopsis{
+      display:none;
+      width: 0%;
+      letter-spacing: 0.3rem;
+      margin-left: 3rem;
+      position: absolute;
+      padding: 0;
+      right: 0px;
+      top: 0;
+      height: 100%;
+      color:black;
+      text-align: center;
+      transition:  1s ease;
+      
+  } 
+
+  .sinopsis p:first-child {
+      font-weight: 900;
+  }
+
+
+  li:hover .sinopsis {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      color:white;
+      transition:  1s ease;
+      
+      
+  } 
+
+
+
+  @media (min-width: 1000px) {
+     
+      .sinopsis p {
+          flex: 0 0 calc(21% - 2rem);
+          margin: 0 auto;
+          color: white;
+          line-height: 1;
+         
+      }     
+      
+      
+  }
+
+ 
+
+  .carrucel img{
+      position: relative;
+      
+      height: 100%;
+      width: 100%;
+      transition:  1s ease;
+  }  
+  
+  li:hover img{
+      width: 60%;
+       
+      transition:  1s ease;
+  }  
+
+  .carrucel a {
+      text-decoration: none;
+      color:#9b1c31;
+  }
+
+
+
+
+  @keyframes encendido{/*100% / 6(imagenes)= 16.6 (duracion por imagen)*/ 
+
+      0% {margin-left:0;}/*aqui el tiempo que va a*/ 
+      16% {margin-left:0;}/*UN TOTAL DE 10 SEGUNDOS DE CARTEL*/ 
+      /*UN TOTAL DE 2 SEGUNDOS DE TRANSICION PARA MOVER LA IMAGEN*/ 
+      18% {margin-left: -100%;}/*aqui el tiempo que va a*/ 
+      34% {margin-left: -100%;}/*durar la imagen*/ 
+
+      36% {margin-left: -200%;}/*aqui el tiempo que va a*/ 
+      52% {margin-left: -200%;}/*durar la imagen*/ 
+
+      54% {margin-left: -300%;}/*aqui el tiempo que va a*/ 
+      70% {margin-left: -300%;}/*durar la imagen*/ 
+
+      72% {margin-left: -400%;}/*aqui el tiempo que va a*/ 
+      88% {margin-left: -400%;}/*durar la imagen*/ 
+
+      90% {margin-left: -500%;}/*aqui el tiempo que va a*/ 
+      100% {margin-left: -500%;}/*durar la imagen*/ 
+  } 
+
+  
+/*Mobile Menu*/
+
+
+@media (min-width: 768px) {
+    .mobile-menu{
+        display:none;
+    }
+
+    #menu-comprimido{
+        display: block;
+       
+    }
+}
+
+  #menu-comprimido{
+     display:block;
+     font-size: 10px;
+  }
+  
+
+  #menu-comprimido:target{
+     display:block;
+  }
+  
+  .mobile-menu img{
+      width: 5rem;
+      margin:0 auto;
+  
+    }   
+
+
+  .navegacion a:hover{
+      color:#9b1c31;
+  }
+
+
+
+  /*Contenido-Principal*/
+
+  .contenido-principal{
+      flex-wrap: wrap;
+      display: flex;
+     
+  }
+
+  
+
+
+
+/*LOGIN*/
+
+legend{
+  letter-spacing: .8rem;
+  margin: 2rem;
+  text-align: center;
+
+}
+
+  .login{
+     
+      display:flex; 
+      order:-1;
+      flex-direction: column;
+      margin: 10rem auto;      
+          
+  }
+
+
+
+.campo{
+ 
+  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 1.6rem;
+    
+         
+}
+.contenido-principal .campo label{
+ 
+  flex: 0 0 calc(20% - 1rem);
+}
+
+.contenido-principal .campo input{
+  background-color: black;
+  color: white;
+  flex: 0 0 calc(45% - 3rem);
+  padding: 1rem;
+}
+
+
+
+
+.campo-enviar{
+  display: flex;
+  flex-direction: column; 
+
+}
+
+/*POSTER-PELICULAS Y SERIES*/ 
+
+.contenedor h2{
+  margin-top:5rem;
+}
+
+.contenido-main{
+  display:flex;
+  align-items: center;/*especialmene en los posters centro todo perfectamente*/
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+ 
+  
+}
+
+@media (min-width:480px ) {
+  .contenido-main.bg-azul {
+  background-color: #141414;
+  }
+
+  .contenido-main.bg-verde{
+      background-color: #141414;
+  }
+  
+}
+
+
+
+.poster{
+     
+  flex: 0 0 calc(50% - 1rem);
+  margin-bottom:2rem ;
+  font-size:1rem;
+  border-bottom: none;
+} 
+
+.contenido-main.bg-azul>.poster{
+  border: solid 5px #072F5F;
+}
+
+.contenido-main.bg-verde>.poster{
+  border: solid 5px #006a4e;
+}
+
+@media (max-width: 480px ) {/*vista de celular vertical para abajo*/
+  .poster{
+    
+      flex: 0 0 calc(25.5% - 1rem);
+      border:none;
+      margin: 1rem 0;
+  } 
+
+ .poster p:first-child {/*Titulo de pelicula arriba de imagen*/
+   color:white;
+   font-size: 1rem;/*hace titulos mas pequeños para que no se pasen mientrase la vista sea pequeña*/
+   align-items: center;
+   justify-content: center;
+   line-height: 1; /*evita separacion excesiva en titulos*/
+  } 
+
+  .poster p:nth-last-child(2){/*Descripcion de pelicula invisible*/
+      display:none;
+  }
+  .no-display{
+      display:none;
+  }    
+ 
+}
+
+
+
+
+
+
+.poster img{
+  height: 30rem;
+}
+
+@media (max-width: 480px) {
+  .poster img{
+      height: 16rem;
+     
+  }
+  
+} 
+
+/*TAMAÑO PARA TABLETA Y PC */
+@media (min-width: 768px ) {
+  
+  .poster{
+      
+      flex: 0 0 calc(25.5% - 1rem);
+      border:none;
+      margin: 1rem 0;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .poster{
+      flex:0 0 calc(23.5% - 0.3rem);
+  }
+}
+
+.poster p{
+  font-size:1.6rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+ 
+}  
+
+
+
+@media (min-width: 480px) {
+              
+ .poster > .dead-click{/*noticias tambien tiene un dead link y si no ponia esto afectaba la vista 480px de noticia , al meter .poster le aclaro de cual estoy hablando y solo afecta a los posters no a las noticias*/
+  
+  pointer-events: none;/*cancela el click que se usa en el celular para ir a la pelicula cuando crece a 480px*/
+ 
+  }
+
+  .titulo-pelicula {
+  color:white;
+  height: 10%;
+  
+  padding-top: 1rem;
+  margin-top: auto;
+          
+  }  
+ 
+
+  .caracteristicas-pelicula{
+       color:white;     
+      height: 10%;
+      line-height: 1;
+      padding: 1rem;
+      margin-top:auto; 
+      margin-bottom:auto;
+      
+  }
+  
+}
+
+
+
+  /*NOTICIAS*/
+
+  .blog-noticias{
+      text-align: center;
+      width: 95%;
+  }
+
+  
+  
+
+
+
+  .blog-noticias h2:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: .5rem;
+      background-color:
+      #9b1c31;
+      margin-top: 1rem;
+     
+  }
+ 
+
+  .blog-noticias h2:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: .5rem;
+      background-color:
+      #9b1c31;
+      margin-top: 1rem;
+     
+  }
+
+  .noticia{
+      
+      padding: 2rem 0rem;
+      text-align: center;
+      border-bottom: 1px solid #e1e1e1;
+  }   
+
+
+
+  @media (min-width: 500px) {
+      .noticia{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 2rem 0rem;
+          text-align: center;
+          border-bottom: 1px solid #e1e1e1;
+      }
+      .imagen-noticia{
+          flex: 0 0 40%;
+      } 
+      .noticia h3 {
+          flex: 0 0 calc(60% - 1rem);
+          font-size: 2rem;
+      }
+
+    
+      
+  }
+
+ 
+  .noticia:last-of-type{
+      border-bottom: none;
+  }
+
+ 
+
+  .noticia a{
+      text-decoration:none;
+
+  }
+
+  .noticia span{
+      text-transform: uppercase;
+      font-size: 2rem;
+  }
+
+
+
+  @media (min-width: 768px) {
+              
+      .dead-click {
+       
+       pointer-events: none;/*cancela el click que se usa en el celular para ir a la pelicula cuando crece a 480px*/
+      
+       }
+   
+      }
+
+
+
+
+
+
+
+  /*FOOTER*/ 
+
+footer{
+  margin-top:10rem;
+}
+
+
+  .contenedor-footer{
+      display:flex; 
+      flex-direction: column;
+      background-color: black;
+      justify-content: space-between; 
+      margin-bottom: 0;
+  }
+
+ 
+
+  .navegacion-footer{
+      background-color: black;
+      text-align: center;
+  }
+
+  @media (min-width: 768px) {
+      .navegacion-footer a:last-child{
+          margin-right:1rem;
+      }
+  } 
+
+  footer .barra{
+      line-height: 2;
+      width: 80%;
+      margin: 0 auto;
+      padding: 10px;
+  
+  }
+ 
+  
+  .navegacion-footer a:hover{
+      color:#9b1c31;
+  } 
+
+  
+
+  
+
+                               /*PELICULAS HTML*/
+
+
+/*MAIN*/
+
+
+
+
+@media (max-width: 767px ) {/*para tabletas*/
+  main .contenedor-genero .poster{/*sino desaparece los del index.html tambien*/
+      display:none;
+  }
+
+  aside{
+      display:none;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px ) {
+  
+
+.contenedor-genero{
+  justify-content: space-between;
+  width: 100%;
+  height: 47rem;
+  display: flex;
+  overflow-x: auto;
+  margin-top:5rem;
+  
+
+}  
+.genero{
+  flex: 0 0 calc(50% - 1rem);/*el flex que tiene el padre hace que no se ocupe el FLEX:SHRINK 0 QUE USABAMOS PORQUE YA ESTA SIENDO UTILIZADO EN LA FORMULA*/
+
+  margin-right: 5rem;
+ 
+}
+
+.genero img{
+  width: 100%;
+  height: 90%;/*para que deje espacio para el nombre de la pelicula*/
+  
+}
+
+.genero a{
+  text-decoration: none;
+}
+
+.genero p{
+  margin-top: 1rem;
+  text-transform: uppercase;
+  line-height: 1;
+  color: white;
+  font-weight: bold;
+}
+
+.borde-final{/*crea una linea vertical al final para saber que no hay ma contenido*/
+
+border: 1px solid red; 
+
+} 
+
+
+}/*MQ MAX 768PX PARA GENERO*/
+
+
+
+
+
+@media (min-width: 768PX ) {/*para pc en adelante*/
+  
+  .contenido-principal-peliculas{
+     
+      display:flex; 
+      justify-content: space-between;
+      margin-top: 50px;
+
+  }
+
+
+
+  .contenido-peliculas.contenedor{
+      margin-top: 8rem;
+      flex: 0 0 calc(70% - 1rem);
+  } 
+
+  .genero{
+      display:none;
+  }  
+
+
+
+  
+  .borde-final{
+      display:none;
+  }
+
+  .contenedor-genero{
+      display:flex;
+      height: unset;
+      overflow-x: unset;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+}/*min-width: 768PX*/
+
+@media (min-width: 1200px) {
+  .contenedor-genero .poster{
+      flex: 0 0 calc(20% - 1.0rem);
+  } 
+
+}
+
+
+
+
+
+/*ASIDE*/
+
+
+
+
+ 
+
+
+.top-ten {
+  display: flex;
+  text-transform: uppercase;
+  
+  flex-wrap: wrap;
+  height: 100%; /*sino lo pone se desajusta la tabla siempre dele tamaño a estos padres*/
+}
+
+@media (max-width: 1000px) {
+  .top-ten{
+      display:none;
+  }
+}
+
+
+.top-ten form{
+  margin: 5rem auto;
+ 
+  height: fit-content;
+}
+
+.top-ten legend{
+  letter-spacing: 0;
+  margin: 0;
+  text-align: center;
+
+}
+
+
+.login-lateral label,
+.login-lateral input {
+  width: 50%;
+}
+
+
+
+.top{
+  flex: 0 0 52%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin: 2rem auto;
+  
+  
+} 
+
+.numero-top { 
+  width: 63%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  margin: 0 auto; 
+  
+} 
+
+.numero-top p {
+margin:0 auto;
+
+font-weight: bolder;
+font-size: 4rem;
+}
+
+
+
+.imagen-top {
+  height: 100%;
+  
+}
+
+.imagen-top img{/*para que la imagen crezca tato como el padre*/
+  width: 60rem;
+  height: 15rem;
+
+}
+
+.detalles-top{
+  display: block;
+  align-items: center;
+  border: solid 1px white;
+  
+
+}
+
+
+/*INDICE*/
+
+.indice-peliculas{
+  height: 15rem;
+  margin: 0 auto;
+  
+  text-align: center;
+  width: 95%;
+}
+.indice-peliculas ul{
+  padding: 0;/*traia un padding por default*/
+  width: 100%;
+}
+
+.indice-peliculas li {
+  background-color: black;   
+  display: inline-block;
+  text-decoration: none;
+  padding:10%;
+}
+.indice-peliculas ul li.active {
+  background-color:red;
+  border: 2px solid red;
+}
+
+
+.indice-peliculas ul li.active:hover {
+  color:red;
+  background-color:white;
+  transition: ease-in-out 1s; 
+}
+
+
+.indice-peliculas a{
+  text-decoration: none;
+  color: white;
+  justify-content: space-around;
+  
+}
+
+.indice-peliculas li:hover{
+ border: 1px solid red;
+    
+} 
+
+@media (min-width: 768px) {
+  
+  .indice-peliculas li{
+      
+      padding: 3%;
+   
+  }
+
+  .indice-peliculas li:hover{
+      padding:47.359;
+      margin:10;
+  }
+
+   
+
+}
+
+
+
+/*CONTACTO.HTML*/
+
+.formulario{
+  margin-top: 10rem;
+}
+
+.formulario fieldset {
+  padding: 2rem;
+  margin-bottom: 4rem;
+}  
+
+.formulario legend{
+  text-align: left;
+} 
+
+.formulario label{
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.formulario input:not([type="submit"]){
+  display: block;
+  padding: 1rem;
+  width: 85%;
+  border-radius: 1rem;
+  margin-bottom: 6rem;
+  background-color: #e1e1e1;
+
+}
+
+.formulario textarea {
+  height: 20rem;
+  margin:auto;
+  width: 98%;
+  border-radius: 1rem;
+} 
+
+.forma-contacto{
+  
+  flex-wrap: wrap;
+  margin: 5rem auto;
+  display: flex;
+  max-width: 45rem;
+  justify-content: safe;
+  align-items: baseline;
+}
+
+.forma-contacto label{
+  min-width: 8rem;
+
+}
+
+
+
+
+
+@media (min-width: 420px ) {
+  .forma-contacto{
+      flex-wrap: nowrap;
+    
+  }
+ 
+}
+
+.btn-formulario.centrar-texto {
+  width: 100%;
+  background-color: #006a4e;
+  margin:0 auto;
+  display:block;
+  border:none;    
+  padding: 2rem;
+  color: white;
+}
+
+@media (min-width: 768px ) {
+  .btn-formulario.centrar-texto{/*seleccionando especificamente este boton del furmulario porque hay muchos como el*/
+      width: 20%;
+      margin:0 auto;
+      display:block;
+      border:none;
+      cursor: pointer;
+      padding: 2rem;
+      color: white;
+      background-color: #072F5F;
+  }
+  
+
+}
+
+
+
+/*STREAMING.HTML*/
+
+.reproductor{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.informacion-reproductor{
+  padding:2rem;
+}
+
+.informacion-reproductor  h2{
+ color:red;
+ margin: 1rem;
+} 
+
+iframe{
+margin: 0 auto;
+  width: -webkit-fill-available;
+}
+
+
+
+.informacion-reproductor  li{
+  list-style: none;
+
+}
+
+.informacion-reproductor p{
+  margin-bottom: 10px;
+   }
+   
+
+
+@media (min-width: 768px) {
+
+  .streaming {
+  
+      align-items: center;
+  
+  }
+
+  .reproductor{
+      width: 80%;
+      margin:0 auto;
+  }
+
+  .informacion-reproductor{
+  flex: 0 0 calc(50% - 1rem);
+  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  }
+
+ 
+  
+  
+}
+
+
+
+.TriviaCinefila{
+  color:#fff;
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.triviaLetrasBlancas{
+  color: #fff;
+} 
+
+
+.franja-RGB {
+  background: linear-gradient(182deg, #468bff, #00abfb, #db00ff, #820098);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 34s ease infinite;
+  -moz-animation: AnimationName 34s ease infinite;
+  -o-animation: AnimationName 34s ease infinite;
+  animation: AnimationName 34s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:51% 0%}
+  50%{background-position:50% 100%}
+  100%{background-position:51% 0%}
+}

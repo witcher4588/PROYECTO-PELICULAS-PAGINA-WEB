@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monda:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>DePelicula</title>
+
+</head> 
+
+<body>
+        <header> 
+            <div class="site-header">
+                <div class="contenedor contenido-header">
+                    <div class="barra">
+                        <a href="index.html">
+                            <h1 class="no-margin">De<span>Pelicula</span></h1>
+                        </a>
+                        <div class="mobile-menu">
+                            <a href="#menu-comprimido">
+                                <img src="img/barras.svg" alt="Menu Hamburguesa">
+
+                            </a>
+                        </div>
+                        
+                        
+                        <nav id="menu-comprimido" class="navegacion">
+                            <a href="peliculas.html" class="no-margin centrar-texto" >Peliculas</a>
+                            <a href="series.html" class="no-margin centrar-texto">Series</a>
+                            <a href="TriviaCinefila.html" class="no-margin centrar-texto">Trivia Cinefila</a>
+                            <a href="contacto.html" class="no-margin centrar-texto">Contacto</a>
+                        </nav>
+                    </div><!--.barra-->
+           
+                    <!--CARRUCEL PRUEBA PARA PANTALLAS GRANDES Y MEDIANAS-->
+
+                    <div class="carrucel contenedor" id="carrucel">
+                        <ul>
+                            <li><a href="#">
+                                <img src="img/carrucel/1.jpg" alt="">
+                            </a>
+                                <div class="sinopsis"><p><a href=""><span></span>El Hobbit: La desolacion de Smaug </span></a></p> <p>La Montaña Solitaria fue ocupada por el dragón Smaug y los enanos deberán enfrentarse a él para poder recuperar sus tierras.</p></div>
+                            </li>
+                            <li><a href="#">
+                                <img src="img/carrucel/2.jpg" alt="">
+                            </a>
+                                <div class="sinopsis"><p><a href="#"><span>Seven Deadly Sins</span></a></p> <p>Los  Caballeros Sagrados han tomado la ciudad, Elizabeth decide huir y pedir ayuda a los "Los siete pecados capitales" orden  conformada por los peores criminales del reino . </p></div></li>
+                                <li><a href="#">
+                                    <img src="img/carrucel/3.jpg" alt="">
+                                </a>
+                                    <div class="sinopsis"><p><a href="#"><span>The Big Bang Theory</span></a></p> <p>Un grupo de científicos poco sociales cambia poco a poco gracias a la llegada de una nueva y hermosa vecina, Penny, dando un giro radical a su forma de vida tan geek.</p></div></li>
+                            <li><a href="#">
+                                <img src="img/carrucel/4.jpg" alt="">
+                            </a><div class="sinopsis"><p><a href="#"><span>ANIMALES FANTÁSTICOS: LOS CRÍMENES DE GRINDELWALD</span></a></p> <p>El mago tenebroso ha escapado y está reuniendo a un grupo de devotos seguidores para elevar a los magos sobre los seres no mágicos..</p></div></li>
+                            <li><a href="#">
+                                <img src="img/carrucel/5.jpg" alt="">
+                            </a><div class="sinopsis"><p><a href="#"><span>Kimetsu no Yaiba</span></a></p> <p>Tanjirou Kamado es un chico inteligente y de buen corazón que vive con su familia y gana dinero vendiendo carbón. Todo cambia cuando su familia es atacada y asesinada por un demonio</p></div></li>
+                            <li><a href="#">
+                                <img src="img/carrucel/6.jpg" alt="">
+                            </a><div class="sinopsis"><p><a href="#"></a><span>JOHN WICK 3: PARABELLUM</span></a></p> <p>John Wick está siendo cazado, por haber roto una regla de oro, matar a alguien en el interior del Hotel Continental, $14 millones de dolares vivo o muerto</p></div></li>
+                        </ul>
+                    </div>
+
+
+
+       
+
+                    <div class="texto-header"> 
+                        <p class=" no-margin centrar-texto franja-amarilla">Contáctanos</p>
+                    </div>
+                </div><!--CONTENEDOR-->
+            </div><!--SITE-HEADER-->
+
+        </header> 
+
+
+     
+   
+     <div class="formulario contenedor">
+        
+<form >
+<fieldset><legend>Datos <span>Personales</span></legend>
+
+<div class="datos-personales contenedor">
+
+<label for="name">Nombre:</label>
+<input type="text" required>
+
+<label for="name">Correo:</label>
+<input type="email" required>
+
+<label for="name">Teléfono:</label>
+<input type="text" required>
+
+</div>
+
+</fieldset>
+
+
+<fieldset><legend>Tu <span>Mensaje</span></legend>
+
+<textarea placeholder="Escribe aquí tu mensaje o pedido" required></textarea>
+
+</fieldset>
+
+
+
+
+<fieldset><legend>Forma de <span>Contacto</span></legend>
+
+    <p>Como te gustaría ser contactado ?</p> 
+    <!--Se le pone el mismo nombre en FOR para que puedan elegir los dos radio buttons o solo uno si quieren-->
+
+    
+<div class="forma-contacto ">
+    <label >Teléfono</label><input type="radio" name="contacto" id="telefono" required>
+    <label >E-mail</label><input type="radio" name="contacto" id="correo" required> 
+
+</div>
+
+<div class="contenedor">
+    <p>Si elegiste ser contactado por Teléfono, por favor indicanos la hora a la que te gustaria ser llamado:</p>  
+
+    <label for="fecha">Fecha:</label>
+    <input type="date">
+
+    <label for="fecha">Hora:</label>
+    <input type="time">
+</div>
+    
+    </fieldset> 
+
+    <input type="submit" value="Enviar" class="btn-formulario centrar-texto">
+
+        </form>
+
+     </div><!-- CLASS FORMULARIO CONTENEDOR PADRE-->
+
+     
+
+
+
+
+ 
+
+<footer>
+        <div class="contenedor-footer">
+                <div class="barra">
+                    <a href="index.html">
+                        <h1 class="no-margin">De<span>Pelicula</span></h1>
+                    </a>
+                    <nav class="navegacion-footer">
+                        <a href="peliculas.html" class="no-margin centrar-texto">Peliculas</a>
+                        <a href="series.html" class="no-margin centrar-texto">Series</a>
+                        <a href="contacto.html" class="no-margin centrar-texto">Trivia Cinefila</a>
+                        <a href="contacto.html" class="no-margin centrar-texto">Contacto</a>
+                    </nav>
+                </div><!--.barra-->
+               
+            </div><!--CONTENEDOR-->
+
+</footer>
+
+
+
+<script src="/Peliculas/js/miScript.js"></script>    
+</body>
+</html>
